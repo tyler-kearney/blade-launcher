@@ -31,3 +31,6 @@ build_property.EnableCodeStyleSeverity =
 
 [/Users/tylerkearney/Coding-Projects/C-Sharp/blade-launcher/blade-launcher/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
+[/Users/tylerkearney/Coding-Projects/C-Sharp/blade-launcher/blade-launcher/Views/MainWindow.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml

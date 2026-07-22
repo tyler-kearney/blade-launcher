@@ -12,7 +12,6 @@
         <Folder Include="Models\"/>
         <AvaloniaResource Include="Assets\**"/>
         <Folder Include="ViewModels\" />
-        <Folder Include="Views\" />
     </ItemGroup>
 
     <ItemGroup>

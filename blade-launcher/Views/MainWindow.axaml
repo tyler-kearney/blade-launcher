@@ -1,0 +1,97 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006.xaml"
+        xmlns:vm="using:blade_launcher.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="700" d:DesignHeight="450"
+        x:Class="blade_launcher.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/placeholder.ico"
+        Title="Blade Launcher"
+        
+        Width="680" Height="420"
+        WindowStartupLocation="CenterScreen"
+        CanResize="False"
+        
+        SystemDecorations="None"
+        Background="Transparent"
+        TransparencyLevelHint="AcrylicBlur, Transparent">
+        
+        <!-- Outer Container with Rounded Border & Drop Shadow -->
+        <Border CornerRadius="12"
+                Background="#18181B"
+                BorderBrush="#27272A"
+                BorderThickness="1"
+                Padding="16">
+            <Grid RowDefinitions="Auto, *">
+                <!-- Row 0: Search box -->
+                <Grid Grid.Row="0" ColumnDefinitions="Auto, *">
+                    <!-- Search Icon / Blade Prompt Accent -->
+                    <TextBlock Grid.Column="0"
+                               Text="🗡️"
+                               FontSize="18"
+                               VerticalAlignment="Center"
+                               Margin="8, 0, 12, 0"/>
+                    
+                    <TextBox Grid.Column="1"
+                             Name="SearchInput"
+                             Text="{Binding SearchQuery, Mode=TwoWay}"
+                             Watermark="Search apps or commands"
+                             FontSize="18"
+                             Padding="10, 8"
+                             Background="#27272A"
+                             Foreground="#FAFAFA"
+                             BorderThickness="0"
+                             CornerRadius="8"/>
+                </Grid>
+                
+                <!-- Row 1: App Grid / Panel Content Area -->
+                <ScrollViewer Grid.Row="1" Margin="0, 16, 0, 0">
+                    <!-- ItemsControl mapped to ViewModel collection -->
+                    <ItemsControl ItemsSource="{Binding FilteredApps}">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapPanel Orientation="Horizontal" HorizontalAlignment="Left"/>
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel> 
+                        
+                        <!-- Template for each App Tile -->
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Button Width="110" Height="100"
+                                        Margin="6"
+                                        Padding="8"
+                                        Background="#27272A"
+                                        CornerRadius="10"
+                                        HorizontalContentAlignment="Center"
+                                        VerticalContentAlignment="Center">
+                                    
+                                    <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+                                        <!-- App icon placeholder -->
+                                        <Border Width="48" Height="48"
+                                                CornerRadius="8"
+                                                Background="#3F3F46"
+                                                Margin="0, 0, 0, 8"
+                                                HorizontalAlignment="Center">
+                                            <TextBlock Text="⚡️"
+                                                       FontSize="20"
+                                                       HorizontalAlignment="Center"
+                                                       VerticalAlignment="Center"/>
+                                        </Border>
+                                        
+                                        <!-- App Name -->
+                                        <TextBlock Text="{Binding Name}"
+                                                   Foreground="#E4E4E7"
+                                                   FontSize="12"
+                                                   TextTrimming="CharacterEllipsis"
+                                                   HorizontalAlignment="Center"
+                                                   MaxWidth="90"/>
+                                    </StackPanel>
+                                </Button>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </ScrollViewer>
+            </Grid>
+        </Border>
+</Window>
