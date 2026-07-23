@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "7113/vqIbFM=",
+  "dgSpecHash": "E09t+oOo3T8=",
   "success": true,
   "projectFilePath": "/Users/tylerkearney/Coding-Projects/C-Sharp/blade-launcher/blade-launcher/blade-launcher.csproj",
   "expectedPackageFiles": [
@@ -34,7 +34,6 @@
     "/Users/tylerkearney/.nuget/packages/skiasharp.nativeassets.macos/3.119.4/skiasharp.nativeassets.macos.3.119.4.nupkg.sha512",
     "/Users/tylerkearney/.nuget/packages/skiasharp.nativeassets.webassembly/3.119.4/skiasharp.nativeassets.webassembly.3.119.4.nupkg.sha512",
     "/Users/tylerkearney/.nuget/packages/skiasharp.nativeassets.win32/3.119.4/skiasharp.nativeassets.win32.3.119.4.nupkg.sha512",
-    "/Users/tylerkearney/.nuget/packages/system.io.pipelines/8.0.0/system.io.pipelines.8.0.0.nupkg.sha512",
     "/Users/tylerkearney/.nuget/packages/tmds.dbus.protocol/0.92.0/tmds.dbus.protocol.0.92.0.nupkg.sha512"
   ],
   "logs": []
