@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("blade-launcher")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fa4c466f4b563ec4991c53256e27b3fba325dd59")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+05d95ae6acc5baecc74b8892c6df31c13b223b78")]
 [assembly: System.Reflection.AssemblyProductAttribute("blade-launcher")]
 [assembly: System.Reflection.AssemblyTitleAttribute("blade-launcher")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
